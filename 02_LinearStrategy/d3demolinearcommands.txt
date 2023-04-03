@@ -1,0 +1,25 @@
+git checkout -b dev
+git commit
+git checkout -b dev1
+git commit
+git commit
+git checkout dev
+git checkout -b dev2
+git commit
+git commit
+git checkout dev
+git merge dev2
+git checkout dev1
+git rebase dev
+git checkout dev
+git merge dev1
+git checkout master
+git merge dev
+git checkout -b dev3
+git commit
+git checkout master
+git commit
+git checkout dev3
+git rebase master
+git checkout master
+git merge dev3
