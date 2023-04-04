@@ -1,8 +1,8 @@
-# Keeping the front half of a multiple feature change
+# Keeping the back half of a multiple feature change
 
-This is the easiest fix that you can do, because you have all the history you need.
+This is a more difficult fix than keeping the front commits.
 
-After the cycle resets, you may need to rebase the additional feature branch again, but you won't lose any work and you can do this without messing up too much history.
+After the cycle resets, you will need to rebase the additional feature branch again, but you won't lose any work and you can do this without messing up too much history.
 
 ## Create the scenario
 
@@ -48,18 +48,4 @@ To create this scenario, create a "feature branch" off of `main`.  Once changes 
 
 1. Checkout a new branch from the feature.  This will have identical commits.
 
-    Using this branch, you won't lose anything, and the two other commits are preserved in the chain.
-
-1. Checkout the multiplefeatures-keepfront branch, and then reset to the commit you want to keep
-
-    ```bash
-    git reset --hard <commitish>
-    ```  
-
-1. You are now ready to merge the feature and you've kept all code and have only prepped the requested commits to git
-
-    Make sure to cleanup branches and orphaned commits as so desired.
-
-## Conclusion
-
-In this scenario, you only had to keep the first two commits in a chain feature branch which is accomplished with an easy reset
+1. After determining which commits to keep, use a cherry-pick to pick those commits out of the chain.
