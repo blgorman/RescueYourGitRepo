@@ -39,3 +39,19 @@ To create this scenario, create a "feature branch" off of `main`.  Once changes 
     Use your local to create two commits on each branch and push to remote so that they are ready for `code review`.
     
 1. For ease, merge `dev1` first, then rebase `dev2` on the `multiplefeatures-keepfront` branch, then merge `dev2`
+
+    Delete all the branches to simulate the real world and ensure rebase merge doesn't mess anything up
+
+    When completed, you'll have a linear history with the new feature having around 4 commits (if you did 2 each).
+
+    You'll then need to discern which commits to keep and which to remove.  Use `git diff commitish .. commitish` to see history comparisons or use a tool to visualize the changes.
+
+1. Checkout a new branch from the feature.  This will have identical commits.
+
+    Using this branch, you won't lose anything, and the two other commits are preserved in the chain.
+
+1. Checkout the multiplefeatures-keepfront branch, and then reset to the commit you want to keep
+
+    ```bash
+    git reset --hard <commitish>
+    ```  
