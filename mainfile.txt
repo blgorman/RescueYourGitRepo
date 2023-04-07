@@ -1,3 +1,5 @@
 # Place changes here to simulate another team moving the repo forward
 
 ## Other developer changes below....
+
+The other team made some changes in the same time you were working..
