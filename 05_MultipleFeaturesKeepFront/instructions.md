@@ -50,10 +50,18 @@ To create this scenario, create a "feature branch" off of `main`.  Once changes 
 
     Using this branch, you won't lose anything, and the two other commits are preserved in the chain.
 
-1. Checkout the multiplefeatures-keepfront branch, and then reset to the commit you want to keep
+1. Checkout the `multiplefeatures-keepfront` branch, and then reset to the commit you want to keep
+
+    >**Note:** remember you can find the commit with `git log` or your GUI of choice.
 
     ```bash
     git reset --hard <commitish>
+    ```  
+
+1. Push the changes with force to override the remote branch
+
+    ```bash
+    git push --force-with-lease
     ```  
 
 1. You are now ready to merge the feature and you've kept all code and have only prepped the requested commits to git
