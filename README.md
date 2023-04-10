@@ -74,7 +74,10 @@ This is not the only way to accomplish these goals
 
     Follow the instructions on that repo to complete the activity
 
+## Additional Materials
+
+Slides for the talk are [here](https://talkimages.blob.core.windows.net/rescuegit/RescueGit.pptx).  Lots of demo videos make it too large to host in a GIT repository at GitHub without GIT LFS.
+
 ## Conclusion
 
 I hope this has helped you.  Please let me know if you have any questions or concerns, issues, etc.
-

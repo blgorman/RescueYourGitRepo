@@ -68,6 +68,18 @@ To create this scenario, create a "feature branch" off of `main`.  Once changes 
 
     Make sure to cleanup branches and orphaned commits as so desired.
 
+## Finish the Promotion
+
+To finish the promotion and clean up the code, follow a couple of steps:
+
+1. Merge the feature that is promoted, and delete the branch
+
+1. Fetch and Pull main, then Create a new branch off of main after the promotion
+
+1. Pick the final feature commits from the end of the non-promotion branch
+
+1. Push the new branch, merge it to main, fetch and pull, and cleanup
+
 ## Conclusion
 
 In this scenario, you only had to keep the first two commits in a chain feature branch which is accomplished with an easy reset

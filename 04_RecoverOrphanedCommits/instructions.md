@@ -30,5 +30,5 @@ If you want to clean up any orphaned commits, run the following two commands.
 
 ```bash
 git reflog expire --expire-unreachable=now --all
-git gc –prune=now
+git gc --prune=now
 ```  
